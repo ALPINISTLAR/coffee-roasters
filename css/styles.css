@@ -1,3 +1,44 @@
+/* ** CUSTOM PROPERTIES ** */
+:root
+{
+  --text-color: #333;
+  --accent-color-green: #0A775F;
+  --accent-color-green-80: rgb(10, 119, 95, 0.8);
+  --accent-color-green-60: rgb(10, 119, 95, 0.6);
+  --accent-color-light-brown: #C99B67;
+  --accent-color-light-brown-80: rgb(201, 155, 103, 0.8);
+  --accent-color-light-brown-60: rgb(201, 155, 103, 0.6);
+  --outline-color: var(--accent-color-green);
+  --dull-brown:  #F3D7B7;
+}
+/* ** FONTS ** */
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+  url('../fonts/Roboto-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Medium.woff2') format('woff2'),
+  url('../fonts/Roboto-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+  url('../fonts/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* ** GLOBAL STYLES ** */
 html
 {
   height: 100%;
