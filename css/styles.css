@@ -89,7 +89,6 @@ img
   padding-right: 20px;
   margin-right: auto;
   margin-left: auto;
-  border: 4px solid red;
 }
 
 /* * * BUTTON * * */
@@ -196,6 +195,11 @@ img
 .site-nav-list-link:active
 {
   opacity: 0.6;
+}
+.site-nav-medium-font .site-nav-list-link
+{
+  font-size: 16px;
+  line-height: normal;
 }
 /* ***************** */
 /* **     HERO    ** */
@@ -467,6 +471,56 @@ img
   outline-color: var(--accent-color-light-brown);
 }
 
+/* * * * * * * * * * * * * * * * * * * * * * */
+/* * *            SITE FOOTER            * * */
+/* * * * * * * * * * * * * * * * * * * * * * */
+.site-footer {
+  padding-top: 65px;
+  padding-bottom: 65px;
+  background-color: var(--dull-brown);
+  background-image: url(../img/bg-img-light-brown.jpg);
+}
+.site-footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-footer-logo-link {
+  display: inline-block;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+.site-footer-logo-link:hover
+{
+  opacity: 0.8;
+}
+.site-footer-logo-link:active
+{
+  opacity: 0.6;
+}
+/* ** SOCIALS ** */
+.socials {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.socials-item:not(:last-child) {
+margin-right: 30px;
+}
+.social-list-link {
+  display: flex;
+  color: #333;
+}
+.social-list-link:hover
+{
+  color: var(--accent-color-green);
+}
+.social-list-link:active
+{
+  opacity: 0.6;
+}
 /* ** RETINA BACKGROUND ** */
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -486,5 +540,8 @@ only screen and (                min-resolution: 2dppx) {
   }
   .how-it-works-inner {
     background-image: url(../img/green-background@2x.jpg);
+  }
+  .site-footer {
+    background-image: url(../img/bg-img-light-brown@2x.jpg);
   }
 }
