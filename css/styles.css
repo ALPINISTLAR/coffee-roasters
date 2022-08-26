@@ -248,6 +248,11 @@ img
   padding-top: 20px;
   padding-bottom: 50px;
 }
+/* * * * INDEX COLLECTION * * * */
+.index-collection
+{
+  margin-bottom: 20px;
+}
 .index-collection-inner {
   padding: 50px 143px;
   background-color: #F8F8F2;
@@ -284,9 +289,9 @@ img
   object-fit: cover;
 }
 .index-collection-info {
-flex-grow: 1;
-padding-left: 117px;
-padding-right: 117px;
+  flex-grow: 1;
+  padding-left: 117px;
+  padding-right: 117px;
 }
 .index-collection-info-title {
   font-size: 48px;
@@ -310,7 +315,75 @@ padding-right: 117px;
 {
   margin-bottom: 10px;
 }
-
+/* * * * INDEX FEATURES * * * */
+.index-features {
+  /* margin-bottom: 30px; */
+}
+.index-features-inner {
+  padding: 50px 30px;
+  background-image: url(../img/index-features-bg.jpg);
+  background-size: 100% 700px;
+  background-repeat: no-repeat;
+}
+.index-features-heading {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 59px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.index-features-text {
+  width: 100%;
+  max-width: 581px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  margin-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.index-features-list {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0;
+  margin: 0;
+  margin-left: -20px;
+  list-style: none;
+}
+.index-features-item {
+  width: calc(100% / 3 - 20px);
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+.index-features-item-img {
+  width: 433px;
+  max-width: 100%;
+  height: 500px;
+  object-fit: cover;
+  margin-bottom: 28px;
+}
+.index-features-item-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 35px;
+  text-transform: uppercase;
+  color: #333;
+}
+.index-features-item-text {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #333;
+}
 /* ** RETINA BACKGROUND ** */
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -324,5 +397,8 @@ only screen and (                min-resolution: 2dppx) {
   }
   .index-collection-inner {
     background-image: url(../img/ivory-color-bg@2x.jpg);
+  }
+  .index-features-inner {
+    background-image: url(../img/index-features-bg@2x.jpg);
   }
 }
