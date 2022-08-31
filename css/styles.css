@@ -534,6 +534,11 @@ img
 /* ============================= */
 /* ==      OUR COMMITMENT     == */
 /* ============================= */
+.hero-common-img
+{
+  width: 710px;
+  height: 596px;
+}
 .our-commitment {
   margin-bottom: 80px;
 }
@@ -572,8 +577,6 @@ img
 /* ================================ */
 /* ==== UNCOMPROMISING QUALITY ==== */
 /* ================================ */
-.uncompromising-quality {
-}
 .uncompromising-quality-inner {
   display: flex;
   padding: 0 30px 90px;
@@ -617,8 +620,6 @@ img
 /* <!-- * * * * * * * * * * * * * * * --> */
 /* <!-- * * * OUR HEADQUARTERS * * *  --> */
 /* <!-- * * * * * * * * * * * * * * * --> */
-.our-headquarters {
-}
 .our-headquarters-inner {
   padding: 50px 30px 100px;
   background-color: var(--accent-color-green);
@@ -697,6 +698,22 @@ img
   text-align: left;
   color: #333;
 }
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * *        CREATE PLAN PAGE             * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.how-it-works-inner-create-plan-page {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.how-it-works-list-create-plan-page {
+  margin-bottom: 0;
+}
+
+
+
+
+
 /* ** RETINA BACKGROUND ** */
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
