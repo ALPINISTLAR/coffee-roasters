@@ -662,16 +662,20 @@ img
   padding-top: 95px;
   justify-content: flex-end;
 }
-.our-headquarters-info-img
+.country-map-img
 {
+  display: flex;
   width: 120px;
+}
+.country-map-img-uk
+{
   height: 143px;
 }
-.info-img-can
+.country-map-img-canada
 {
   height: 120px;
 }
-.info-img-aus
+.country-map-img-australia
 {
   height: 107px;
 }
