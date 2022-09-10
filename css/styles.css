@@ -2,6 +2,7 @@
 :root
 {
   --text-color: #333;
+  --title-color: #000000;
   --accent-color-green: #0A775F;
   --accent-color-green-80: rgb(10, 119, 95, 0.8);
   --accent-color-green-60: rgb(10, 119, 95, 0.6);
@@ -705,15 +706,177 @@ img
 .how-it-works-inner-create-plan-page {
   padding-top: 80px;
   padding-bottom: 80px;
+  margin-bottom: 20px;
 }
 .how-it-works-list-create-plan-page {
   margin-bottom: 0;
 }
+.drink-your-coffee-inner {
+  display: flex;
+  background-image: url(../img/ivory-color-bg.jpg);
+  padding: 50px 145px 50px 30px;
+}
+.about-product-list {
+  margin: 0;
+  margin-right: auto;
+  list-style: none;
+}
+.about-product-list-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+.about-product-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #555555;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 33px;
+}
+.questionnaire {
+  display: flex;
+  flex-direction: column;
+}
+.questionnaire-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 100px;
+}
+.questionnaire-list-item {
+  max-width: 660px;
+  width: 100%;
+  /* border: 4px solid black; */
+}
 
+.item-header {
+  display: flex;
+  align-items: center;
+  max-width: 660px;
+  width: 100%;
+}
+.item-header-title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-family: Roboto;
+  font-size: 33px;
+  font-weight: 700;
+  line-height: 47px;
+  text-transform: uppercase;
+  color: var(--title-color);
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+.item-header-title-icon {
+  display: flex;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+.item-header-title-icon-open
+{
+  transition: transform 0.4s ease;
+  transform: rotate(-180deg);
+}
+.item-body {
+  width: 660px;
+  display: none;
+  margin-top: 20px;
+}
+.item-body-open
+{
+  display: flex;
+}
+.input-radio-wrapper {
+  display: flex;
+  align-items: center;
+}
+.input-radio-wrapper:not(:last-child)
+{
+  margin-right: 18px;
+}
+.input-check-box {
+  clip: rect(0,0,0,0);
+  pointer-events: none;
+  position: absolute;
+}
+.input-label {
+  width: 208px;
+  height: 220px;
+  padding-top: 30px;
+  padding-left: 16px;
+  background-color: rgb(10, 119, 95, 0.2);
+  cursor: pointer;
+}
 
-
-
-
+input[type=radio]:checked+.input-label {
+  background-color:  #0A775F;
+}
+.input-check-box-content {
+  width: 170px;
+}
+.input-check-box-content-checked p
+{
+  color: #fff;
+}
+.input-check-box-content-checked h3
+{
+  color: #fff;
+}
+.input-check-box-heading {
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 28px;
+  color: var(--text-color);
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  display: flex;
+}
+.input-check-box-text {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--text-color);
+  padding: 0;
+  margin: 0;
+}
+.questionnaire-list-item:not(:last-child)
+{
+  margin-bottom: 60px;
+}
+.order-summary {
+  width: 660px;
+  padding: 40px 20px;
+  background-color:  #C99B67;
+  border: 0;
+  margin-bottom: 20px;
+}
+.order-summary-title {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 14px;
+}
+.order-summary-text {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34px;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
+.button-create-plan
+{
+  align-self: flex-end;
+}
 /* ** RETINA BACKGROUND ** */
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
