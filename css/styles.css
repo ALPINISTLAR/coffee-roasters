@@ -745,7 +745,6 @@ img
 .questionnaire-list-item {
   max-width: 660px;
   width: 100%;
-  /* border: 4px solid black; */
 }
 
 .item-header {
@@ -808,19 +807,13 @@ img
   background-color: rgb(10, 119, 95, 0.2);
   cursor: pointer;
 }
-
 input[type=radio]:checked+.input-label {
   background-color:  #0A775F;
 }
 .input-check-box-content {
   width: 170px;
 }
-.input-check-box-content-checked p
-{
-  color: #fff;
-}
-.input-check-box-content-checked h3
-{
+input[type=radio]:checked .input-check-box-content h3 {
   color: #fff;
 }
 .input-check-box-heading {
@@ -843,6 +836,12 @@ input[type=radio]:checked+.input-label {
   color: var(--text-color);
   padding: 0;
   margin: 0;
+}
+input[type=radio]:checked + label h3 {
+  color: #fff;
+}
+input[type=radio]:checked + label p {
+  color: #fff;
 }
 .questionnaire-list-item:not(:last-child)
 {
