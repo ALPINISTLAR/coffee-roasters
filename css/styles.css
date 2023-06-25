@@ -69,6 +69,7 @@ body
   letter-spacing: 0.5px;
   background-color: #fff;
   color: #222;
+  overflow-x: hidden;
 }
 img
 {
@@ -250,7 +251,18 @@ img
 {
   margin-bottom: 34px;
 }
+.hero-img-wrapper
+{
+  position: relative;
+}
+.hero-badge-img
+{
+  position: absolute;
+  top: -70px;
+  left: -70px;
+}
 .hero-index-img {
+  display: block;
   width: 710px;
   height: 696px;
 }
@@ -267,6 +279,7 @@ img
   margin-bottom: 20px;
 }
 .index-collection-inner {
+  position: relative;
   padding: 50px 143px;
   background-color: var(--ivory-color);
   background-image: url(../img/ivory-color-bg.jpg);
@@ -327,6 +340,22 @@ img
 .index-collection-info-text:not(:last-child)
 {
   margin-bottom: 10px;
+}
+
+.index-collection-leaves-left {
+  position: absolute;
+  top: 30px;
+  left: -150px;
+}
+.index-collection-leaves-right-mix {
+  position: absolute;
+  top: 685px;
+  right: -330px;
+}
+.index-collection-leaves-left-light {
+  position: absolute;
+  left: -215px;
+  bottom: 170px;
 }
 /* * * * INDEX FEATURES * * * */
 .index-features-inner {
