@@ -593,7 +593,7 @@ img
 .hero-common-img
 {
   width: 710px;
-  height: 596px;
+  height: 100%;
 }
 .our-commitment {
   margin-bottom: 80px;
@@ -612,6 +612,7 @@ img
   flex-shrink: 0;
   margin-right: 185px;
   object-fit: cover;
+  z-index: 50;
 }
 .our-commitment-title {
   margin-top: 0;
