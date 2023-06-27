@@ -767,10 +767,32 @@ img
 .how-it-works-list-create-plan-page {
   margin-bottom: 0;
 }
+.drink-your-coffee{
+  overflow: hidden;
+}
 .drink-your-coffee-inner {
+  position: relative;
   display: flex;
   background-image: url(../img/ivory-color-bg.jpg);
   padding: 50px 145px 50px 30px;
+  min-height: 1400px;
+}
+
+.drink-your-coffee-inner-leaves-left {
+  position: absolute;
+  top: 715px;
+  left: -270px;
+}
+.drink-your-coffee-inner-leaves-right-mix {
+  position: absolute;
+  top: 176px;
+  right: -385px;
+}
+.drink-your-coffee-inner-leaves-left-light {
+  position: absolute;
+  top: 1465px;
+  left: -250px;
+  /* bottom: 355px; */
 }
 .about-product-list {
   margin: 0;
