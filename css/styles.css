@@ -826,6 +826,7 @@ img
 }
 
 .item-header {
+  position: relative;
   display: flex;
   align-items: center;
   max-width: 660px;
@@ -843,16 +844,33 @@ img
   color: var(--title-color);
   padding: 0;
   margin: 0;
+}
+.item-header-toggler{
+  display: block;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
   cursor: pointer;
 }
-.item-header-title-icon {
+.item-header-toggler:focus{
+  outline-color: transparent;
+}
+.item-header-toggler::before{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  left: 0;
+  top: 0;
+}
+.item-header-toggler-icon {
   display: flex;
-  cursor: pointer;
   transition: transform 0.4s ease;
+  width: 40px;
+  height: 40px;
 }
-.item-header-title-icon-open
+.item-header-toggler-icon-open
 {
-  transition: transform 0.4s ease;
   transform: rotate(-180deg);
 }
 .item-body {
@@ -860,7 +878,7 @@ img
   display: none;
   margin-top: 20px;
 }
-.item-body-open
+.questionnaire-list-item--open .item-body
 {
   display: flex;
 }
@@ -950,6 +968,12 @@ input[type=radio]:checked + label p {
   margin: 0;
   color: #fff;
 }
+
+.order-summary-values {
+  color: #222;
+}
+
+
 .button-create-plan
 {
   align-self: flex-end;
